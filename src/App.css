@@ -1,33 +1,149 @@
-.App {
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  background: #333333;
+  color: #ffffff;
+  z-index: 100000;
+  font-size: calc(4px + 1vw);
+  overflow: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  font-size: calc(2px + 2vmin);
+}
+
+.nav-brand {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.nav-brand h1 {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.nav-brand img {
+  width: calc(30px + 2vw);
+  height: calc(30px + 2vw);
+  border-radius: 50px;
+  border: 2px solid #0ed;
+  margin-top: 5px;
+}
+
+.App-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.App-header ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.App-header ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.App-header ul li a:hover {
+  color: #444;
+  background: #aaa;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.showcase {
+  display: block;
+  position: relative;
+  top: 48px;
+  text-align: center;
+  background: rgb(151, 65, 22);
+  background-image: url(https://picsum.photos/586);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #aaa;
+}
+
+.showcase h2 {
+  padding-top: 250px;
+  font-size: 2.4em;
+}
+
+.image {
+  width: inherit;
+  height: auto;
+  background: rgba(75, 49, 36, 0.99);
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.image img {
+  border: 2px solid gray;
+  width: 400px;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image button {
+  width: 400px;
+  height: 45px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 2px solid gray;
+  background: rgba(75, 56, 74, 0.5); 
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 620px) {
+  .nav-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #0ed;
+    margin-top: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    position: absolute;
+    top: 39px;
+    right: 0;
+    font-size: calc(2px + 2vmin);
+  }
+
+  .image img {
+    border: 2px solid gray;
+    width: 400px;
+    height: auto;
+  }
+  
+  .image button {
+    width: 400px;
+    height: 45px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px solid gray;
+    background: rgba(75, 56, 74, 0.5); 
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: 400;
   }
 }
